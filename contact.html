@@ -5,13 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
         <style>
             body {font-family: "Montserrat", sans-serif;
-                background-image:black;   
-                color:white;      
+               
+                color:black;      
         }
             .w3-row-padding img {margin-bottom: 12px}
             /* Set the width of the sidebar to 120px */
@@ -20,7 +21,11 @@
             #main {margin-left: 120px}
             /* Remove margins from "page content" on small screens */
             @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-            
+            #back{
+              background-color:black;
+             opacity: .4;
+             color:black
+            }
             </style>
     </head>
 <body>
@@ -46,6 +51,7 @@
   </header><!-- End Header -->
 
   <!-- Contact Section -->
+  <div id="back">
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
     <h2 class="w3-text-light-grey">Contact Me</h2>
     <hr style="width:200px" class="w3-opacity">
@@ -68,7 +74,9 @@
         </button>
       </p>
     </form>
+   
   <!-- End Contact Section -->
+  </div>
   </div>
   
 </body>
