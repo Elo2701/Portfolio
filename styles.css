@@ -514,14 +514,21 @@ a.del{
     display:inline;
     margin:30px 0;
     border-radius:5px;
-}  
-.typed {
-    opacity: 0; 
-    animation: typing 1.5s steps(18, end) forwards;
 }
+.hero-subtitle {
+  color: white;
   
-  @keyframes typing {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-  
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ccc; /* Adjust cursor color */
+  animation: typing 2s steps(30, end), blinking 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blinking {
+  50% { border-color: red; }
+}
