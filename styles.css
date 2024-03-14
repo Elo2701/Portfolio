@@ -620,3 +620,18 @@ article .icon {
     width:25%
   }
 }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .typing {
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+    border-right-width: 0.3rem; /* Adjust border thickness */
+  }
+}
+
+@media (max-width: 576px) {
+  .typing {
+    font-size: 0.6em; /* Further adjust font size for smaller screens */
+    border-right-width: 0.2rem; /* Further adjust border thickness */
+  }
+}
