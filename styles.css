@@ -427,6 +427,30 @@ a {
   .underline:hover::after {
     transform: scaleX(1); /* Show the underline on hover */
   }
+  @media only screen and (max-width: 768px) {
+
+    /* Adjustments for smaller screens */
+
+    .navbar ul {
+
+        flex-direction: column;
+
+    }
+
+    .navbar li {
+
+        padding: 10px 0;
+
+    }
+
+    .navbar .nav-link {
+
+        padding: 10px;
+
+    }
+
+
+
   /*About*/
 
   .about-mf .box-shadow-full {
