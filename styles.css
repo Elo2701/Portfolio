@@ -427,7 +427,6 @@ a {
   .underline:hover::after {
     transform: scaleX(1); /* Show the underline on hover */
   } 
-  
   .menu-toggle {
     display: none; /* Hide by default for larger screens */
     cursor: pointer;
@@ -439,7 +438,6 @@ a {
     right: 20px; /* Adjust right position as needed */
     z-index: 1000; /* Ensure it's above other content */
 }
-
 
 @media only screen and (max-width: 768px) {
     .menu-toggle {
@@ -469,7 +467,6 @@ a {
         padding: 10px;
     }
 }
-
   /*About*/
 
   .about-mf .box-shadow-full {
