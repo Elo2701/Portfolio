@@ -20,13 +20,49 @@
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}  
-             body{
-              background-color:grey;
-              color:white;
+body {
+            background-color:white;
+           /* color: white;*/
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-             }
-             img
-         </style>
+        .testimonials-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-y: auto;
+            max-height: 300px;
+        }
+
+        .testimonials {
+            padding: 10px;
+        }
+
+        .testimonials div {
+            margin-bottom: 20px;
+        }
+
+        .testimonials img {
+            width: 80px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .w3-button {
+            margin-right: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .testimonials-container {
+                max-width: 90%;
+                height: auto;
+                max-height: none;
+            }
+        }
+    </style>
     </head>
 <body>
 
@@ -49,6 +85,7 @@
 
     </div>
   </header><!-- End Header -->
+
  <!-- Testimonials Container -->
  <div class="testimonials-container" style="height: 300px; overflow-y: auto; ">
   <!-- Testimonials -->
@@ -57,7 +94,7 @@
     
     <div>
       <img src="hap.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Mahle Nyakama.</span> Founder of Tabase Sport teams.</p>
+      <p><span class="w3-large w3-margin-right"><b>Milani Ntleki.</b></bMilani></span> Founder of Tabase Sport teams.</p>
       <p>Elo Nyati saved us from a web disaster.</p>
       <br>
       <button class="w3-button w3-green w3-small" onclick="like()">
@@ -71,7 +108,7 @@
     
     <div>
       <img src="hap.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Thembalethu Mangesi.</span> System Developer.</p>
+      <p><span class="w3-large w3-margin-right"><b>Thembalethu Mangesi.</b></span> System Developer.</p>
       <p>She saved us from a documentation disaster.</p>
       <br>
       <button class="w3-button w3-green w3-small" onclick="like()">
@@ -85,7 +122,7 @@
     
     <div>
       <img src="sad.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Sam Peter.</span> Student</p>
+      <p><span class="w3-large w3-margin-right"><b>Sam Peter.</b></span> Student</p>
       <p>She did not meet the deadline!</p>
       <br>
       <button class="w3-button w3-green w3-small" onclick="like()">
@@ -98,7 +135,7 @@
     <br>
     <div>
       <img src="cur.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Mdunjana Njabulo.</span> Junior System Developer</p>
+      <p><span class="w3-large w3-margin-right"><b>Njabulo Mdunjana.</b></span> Junior System Developer</p>
       <p>Are there any potential risks or challenges associated with implementing this feature?</p>
       <br>
       <button class="w3-button w3-green w3-small" onclick="like()">
