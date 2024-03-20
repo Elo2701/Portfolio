@@ -1,63 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="styles.css">
-         <link href="assets/img/favicon.png" rel="icon">
-         <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-    </head>
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
 <body>
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html"><span class="underline">Portfolio</a></span></h1>
-      <div class="menu-toggle">
-        <i class="fa fa-bars"></i>
+        <h1 class="logo"><a href="index.html"><span class="underline">Portfolio</span></a></h1>
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                <li><a class="nav-link scrollto" href="about.html">About</a></li>
+                <li><a class="nav-link scrollto " href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-link scrollto " href="testimonials.html">Testimonial</a></li>
+                <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
     </div>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="about.html">About</a></li>
-          <li><a class="nav-link scrollto " href="portfolio.html">Portfolio</a></li>
-          <li><a class="nav-link scrollto " href="testimonials.html">Testimonial</a></li>
-          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+</header><!-- End Header -->
 
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(pic.jpg)">
+<!-- ======= Hero Section ======= -->
+<div id="hero" class="hero route bg-image" style="background-image: url(pic.jpg)">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I'm Nyati Elo</h1>
-          <div class="hero-subtitle">
-            <p class="typing"> DevOps Engineer</p>
-           </div>
-           <br>
-          <a href="Elo_CV.pdf" class="del">Download CV</a>
+        <div class="table-cell">
+            <div class="container">
+                <!--<p class="display-6 color-d">Hello, world!</p>-->
+                <h1 class="hero-title mb-4">I'm Nyati Elo</h1>
+                <div class="hero-subtitle">
+                    <p class="typing"> DevOps Engineer</p>
+                </div>
+                <br>
+                <a href="Elo_CV.pdf" class="del">Download CV</a>
+            </div>
         </div>
-      </div>
     </div>
-  </div><!-- End Hero Section -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        document.querySelector('.menu-toggle').addEventListener('click', function () {
-            document.querySelector('.navbar ul').classList.toggle('show');
-        });
-    });
-</script>
+</div><!-- End Hero Section -->
 
 </body>
 </html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('.menu-toggle').addEventListener('click', function () {
+          document.querySelector('.navbar ul').classList.toggle('show');
+      });
+  });
+</script>
