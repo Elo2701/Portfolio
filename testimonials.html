@@ -20,6 +20,12 @@
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}  
+             body{
+              background-color:grey;
+              color:white;
+
+             }
+             img
          </style>
     </head>
 <body>
@@ -43,86 +49,83 @@
 
     </div>
   </header><!-- End Header -->
+ <!-- Testimonials Container -->
+ <div class="testimonials-container" style="height: 300px; overflow-y: auto; ">
   <!-- Testimonials -->
-  <h3 class="w3-padding-24 w3-text-light-black";>My Reputation</h3>  
-  <img src="hap.jfif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-<p><span class="w3-large w3-margin-right">Mahle Nyakama.</span> Founder of Tabase Sport teams.</p>
-<p>Elo Nyati saved us from a web disaster.</p>
-<br>
-  <button class="w3-button w3-green w3-small" onclick="like()">
-    <i class="fa fa-thumbs-up"></i> Like
-  </button>
-  <button class="w3-button w3-red w3-small" onclick="dislike()">
-    <i class="fa fa-thumbs-down"></i> Dislike
-  </button>
-  
-
-<img src="hap.jfif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-<p><span class="w3-large w3-margin-right">Thembalethu Mangesi.</span> System Developer.</p>
-<p>She saved us from a documentation disaster.</p>
-<br>
-<button class="w3-button w3-green w3-small" onclick="like()">
-  <i class="fa fa-thumbs-up"></i> Like
-</button>
-<button class="w3-button w3-red w3-small" onclick="dislike()">
-  <i class="fa fa-thumbs-down"></i> Dislike
-</button>
-
-
-  <img src="sad.jfif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-  <p><span class="w3-large w3-margin-right">Sam Peter.</span> Student</p>
-  <p>She did not meet the deadline!</p><br>
-  <button class="w3-button w3-green w3-small" onclick="like()">
-    <i class="fa fa-thumbs-up"></i> Like
-  </button>
-  <button class="w3-button w3-red w3-small" onclick="dislike()">
-    <i class="fa fa-thumbs-down"></i> Dislike
-  </button>
-  
-  
-  
-
-<!-- End About Section -->
-<br><!----
-  <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">3+</span><br>
-      Partners
+  <div class="testimonials">
+    <h3 class="w3-padding-24 w3-text-light-black">My Reputation</h3>
+    
+    <div>
+      <img src="hap.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">Mahle Nyakama.</span> Founder of Tabase Sport teams.</p>
+      <p>Elo Nyati saved us from a web disaster.</p>
+      <br>
+      <button class="w3-button w3-green w3-small" onclick="like()">
+        <i class="fa fa-thumbs-up"></i> Like <span id="likesCount1">0</span>
+      </button>
+      <button class="w3-button w3-red w3-small" onclick="dislike()">
+        <i class="fa fa-thumbs-down"></i> Dislike <span id="dislikesCount1">0</span>
+      </button>
     </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">2+</span><br>
-      Projects Done
+    <br>
+    
+    <div>
+      <img src="hap.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">Thembalethu Mangesi.</span> System Developer.</p>
+      <p>She saved us from a documentation disaster.</p>
+      <br>
+      <button class="w3-button w3-green w3-small" onclick="like()">
+        <i class="fa fa-thumbs-up"></i> Like <span id="likesCount2">0</span>
+      </button>
+      <button class="w3-button w3-red w3-small" onclick="dislike()">
+        <i class="fa fa-thumbs-down"></i> Dislike <span id="dislikesCount2">0</span>
+      </button>
     </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">2+</span><br>
-      Happy Clients
+    <br>
+    
+    <div>
+      <img src="sad.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">Sam Peter.</span> Student</p>
+      <p>She did not meet the deadline!</p>
+      <br>
+      <button class="w3-button w3-green w3-small" onclick="like()">
+        <i class="fa fa-thumbs-up"></i> Like <span id="likesCount3">0</span>
+      </button>
+      <button class="w3-button w3-red w3-small" onclick="dislike()">
+        <i class="fa fa-thumbs-down"></i> Dislike <span id="dislikesCount3">0</span>
+      </button>
     </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">4+</span><br>
-      Meetings
+    <br>
+    <div>
+      <img src="cur.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">Mdunjana Njabulo.</span> Junior System Developer</p>
+      <p>Are there any potential risks or challenges associated with implementing this feature?</p>
+      <br>
+      <button class="w3-button w3-green w3-small" onclick="like()">
+        <i class="fa fa-thumbs-up"></i> Like <span id="likesCount3">0</span>
+      </button>
+      <button class="w3-button w3-red w3-small" onclick="dislike()">
+        <i class="fa fa-thumbs-down"></i> Dislike <span id="dislikesCount3">0</span>
+      </button>
     </div>
   </div>
-  --->
-  <a class="w3-button w3-light-grey w3-padding-large w3-section" href="Elo_CV.pdf">
-    <i class="fa fa-download"></i> Download Resume
-  </a>
+</div>
 
+  <!-- JavaScript for like and dislike functions -->
+  <script>
+    function like() {
+      alert('You liked this!');
+      // Additional logic to increment like count or perform other actions
+    }
   
-<!-- End About Section -->
-
+    function dislike() {
+      alert('You disliked this!');
+      // Additional logic to increment dislike count or perform other actions
+    }
+  </script>
+  
 </div>
 </body>
 </html>
 
 <!-- make it a scroller-->
-<script>
-  function like() {
-    alert('You liked this!');
-    // Additional logic to increment like count or perform other actions
-  }
-
-  function dislike() {
-    alert('You disliked this!');
-    // Additional logic to increment dislike count or perform other actions
-  }
-</script>
