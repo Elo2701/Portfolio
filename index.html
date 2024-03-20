@@ -17,7 +17,9 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <h1 class="logo"><a href="index.html"><span class="underline">Portfolio</a></span></h1>
-   
+      <div class="menu-toggle">
+        <i class="fa fa-bars"></i>
+    </div>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
@@ -49,6 +51,13 @@
       </div>
     </div>
   </div><!-- End Hero Section -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.navbar ul').classList.toggle('show');
+        });
+    });
+</script>
 
 </body>
 </html>

@@ -426,30 +426,49 @@ a {
 }
   .underline:hover::after {
     transform: scaleX(1); /* Show the underline on hover */
-  }
-  @media only screen and (max-width: 768px) {
+  } 
+  
+  .menu-toggle {
+    display: none; /* Hide by default for larger screens */
+    cursor: pointer;
+    font-size: 35px; /* Increase size */
+    padding: 10px;
+    color: white; /* Set icon color */
+    position: fixed; /* Position fixed to keep it in place */
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    z-index: 1000; /* Ensure it's above other content */
+}
 
-    /* Adjustments for smaller screens */
+
+@media only screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show for smaller screens */
+    }
 
     .navbar ul {
+        display: none; /* Hide navigation links by default for smaller screens */
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
 
+    .navbar ul.show {
+        display: flex; /* Show navigation links when menu is toggled */
         flex-direction: column;
-
     }
 
     .navbar li {
-
-        padding: 10px 0;
-
+        padding: 10px;
     }
 
     .navbar .nav-link {
-
         padding: 10px;
-
     }
-
-
+}
 
   /*About*/
 
