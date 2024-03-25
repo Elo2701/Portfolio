@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-    <style>
-        /* Your CSS styles here */
-    </style>
+   
 </head>
 <body>
 <!-- ======= Header ======= -->
@@ -20,8 +18,8 @@
   <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo"><a href="index.html"><span class="underline">Portfolio</span></a></h1>
       <div class="menu-toggle">
-          <i class="fa fa-bars"></i>
-      </div>
+        <i class="fa fa-bars" onclick="toggleMenu()"></i>
+    </div>
       <nav id="navbar" class="navbar">
           <ul>
               <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
@@ -30,7 +28,7 @@
               <li><a class="nav-link scrollto " href="testimonials.html">Testimonial</a></li>
               <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
           </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
+          
       </nav><!-- .navbar -->
   </div>
 </header><!-- End Header -->
@@ -41,8 +39,8 @@
   <div class="hero-content display-table">
       <div class="table-cell">
           <div class="container">
-              <!--<p class="display-6 color-d">Hello, world!</p>--><br><br>
-              <h1 class="hero-title mb-4">I'm Nyati Elo</h1>
+              <!--<p class="display-6 color-d">Hello, world!</p>--><br><br><br>
+              <h5 class="hero-title mb-4">I'm Nyati Elo</h5>
               <div class="hero-subtitle">
                   <p class="typing"> DevOps Engineer</p>
               </div>
@@ -54,13 +52,10 @@
 </div><!-- End Hero Section -->
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-      document.querySelector('.menu-toggle').addEventListener('click', function () {
-          document.querySelector('.navbar ul').classList.toggle('show');
-      });
-  });
+   function toggleMenu() {
+        document.querySelector('.navbar').classList.toggle('active');
+    }
 </script>
 
 </body>
 </html>
-
