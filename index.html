@@ -17,7 +17,9 @@
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo"><a href="index.html"><span class="underline">Portfolio</span></a></h1>
-      
+      <div class="menu-toggle">
+        <i class="fa fa-bars"></i>
+      </div>
       <nav id="navbar" class="navbar">
           <ul>
               <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
@@ -37,8 +39,10 @@
   <div class="hero-content display-table">
       <div class="table-cell">
           <div class="container">
-              <!--<p class="display-6 color-d">Hello, world!</p>--><br><br><br>
-              <h6 class="hero-title mb-4">I'm Nyati Elo</h6>
+              <!--<p class="display-6 color-d">Hello, world!</p>-->
+              <br><br><br><br>
+              <h6 class="hero-title mb-4" style="font-size: 43px;">I'm Nyati Elo</h6>
+
               <div class="hero-subtitle">
                   <p class="typing"> DevOps Engineer</p>
               </div>
@@ -49,6 +53,16 @@
   </div>
 </div><!-- End Hero Section -->
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navbar = document.querySelector('.navbar');
+        const menuToggle = document.querySelector('.menu-toggle');
+
+        menuToggle.addEventListener('click', function() {
+            navbar.classList.toggle('mobile-active');
+        });
+    });
+</script>
 
 </body>
 </html>

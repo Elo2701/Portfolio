@@ -15,26 +15,26 @@
  
     </head>
 <body>
-    
+  
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html"><span class="underline">Portfolio</a></span></h1>
-   
+  <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html"><span class="underline">Portfolio</span></a></h1>
+      <div class="menu-toggle">
+        <i class="fa fa-bars"></i>
+      </div>
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="about.html">About</a></li>
-          <li><a class="nav-link scrollto " href="portfolio.html">Portfolio</a></li>
-          <li><a class="nav-link scrollto " href="testimonials.html">Testimonial</a></li>
-          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+          <ul>
+              <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+              <li><a class="nav-link scrollto" href="about.html">About</a></li>
+              <li><a class="nav-link scrollto " href="portfolio.html">Portfolio</a></li>
+              <li><a class="nav-link scrollto " href="testimonials.html">Testimonial</a></li>
+              <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+          </ul>
+          
       </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
+  </div>
+</header><!-- End Header -->
 
   <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
@@ -115,5 +115,17 @@
     </div>
   
   </section>
+  
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const navbar = document.querySelector('.navbar');
+      const menuToggle = document.querySelector('.menu-toggle');
+
+      menuToggle.addEventListener('click', function() {
+          navbar.classList.toggle('mobile-active');
+      });
+  });
+</script>
+
 </body>
 </html>
