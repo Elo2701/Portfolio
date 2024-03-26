@@ -1,6 +1,4 @@
- /*body{
-  background-color: black;
- }*/
+
  header{
 
     animation: colorFade 3s infinite;
@@ -307,19 +305,27 @@ a {
     max-height: 40px;
   }
   
- /* #header.header-scrolled {
-    background: rgba(0, 0, 0, 0.9);
-    pa*/
 
   
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+#hero {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .hero {
-    height: 100vh;
-    position: relative;
-    color: #fff;
-  }
+  background-image: url(pic.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Ensures the hero section takes up the full viewport height */
+}
+
   
   .hero .hero-content {
     text-align: center;
@@ -358,8 +364,9 @@ a {
     .hero .hero-subtitle {
       font-size: 2.5rem;
     }
+    
   }
-  
+
   .hero .text-slider-items {
     display: none;
   }
@@ -427,46 +434,6 @@ a {
   .underline:hover::after {
     transform: scaleX(1); /* Show the underline on hover */
   } 
-  .menu-toggle {
-    display: none; /* Hide by default for larger screens */
-    cursor: pointer;
-    font-size: 35px; /* Increase size */
-    padding: 10px;
-    color: white; /* Set icon color */
-    position: fixed; /* Position fixed to keep it in place */
-    top: 20px; /* Adjust top position as needed */
-    right: 20px; /* Adjust right position as needed */
-    z-index: 1000; /* Ensure it's above other content */
-}
-
-@media only screen and (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Show for smaller screens */
-    }
-
-    .navbar ul {
-        display: none; /* Hide navigation links by default for smaller screens */
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    .navbar ul.show {
-        display: flex; /* Show navigation links when menu is toggled */
-        flex-direction: column;
-    }
-
-    .navbar li {
-        padding: 10px;
-    }
-
-    .navbar .nav-link {
-        padding: 10px;
-    }
-}
   /*About*/
 
   .about-mf .box-shadow-full {
@@ -545,6 +512,7 @@ a {
       padding: 3rem;
     }
   }
+  
 a.del{
     background-color:white;
     padding:10px 18px;
@@ -554,54 +522,27 @@ a.del{
     display:inline;
     margin:30px 0;
     border-radius:5px;
-}/*
-.hero-subtitle {
-  color: white;
-  
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid #ccc; 
-  animation: typing 2s steps(30, end), blinking 0.5s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blinking {
-  50% { border-color: red; }
-}
-*/
-.details-container {
+}.details-container {
   padding: 1.5rem;
-  flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: 0.1rem solid rgb(163, 163, 163);
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
-  margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
-.about-containers,
 .about-details-container {
   display: flex;
-}
-
-.arrow {
-  position: relative;
-  right: -5rem;
-  bottom: 1.5rem;
-}
-
-#experience {
-  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .experience-sub-title {
@@ -616,14 +557,25 @@ a.del{
   justify-content: center;
   flex-direction: column;
 }
+
 .article-container {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
 }
+
+.arrow {
+  position: relative;
+  right: -5rem;
+  bottom: 1.5rem;
+}
+
+#experience {
+  position: relative;
+}
+
 
 article {
   display: flex;
@@ -639,28 +591,32 @@ article .icon {
 .contact-link{
   text-align: center;
 }
-
-
-
-.typing{
-  color:pink;
-  border-right: .5rem solid rgb(131, 89, 11);
-  font-size:1em;
-  width:0;
+.typing {
+  color: pink;
+ /* border-right: .05rem solid  pink;*/
+  font-size: 0.5em; /* Adjust the font size for larger screens */
+  width: 0;
   margin: 0 auto;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 6s steps(20,end) infinite forwards;
+  animation: typing 6s steps(20, end) infinite forwards;
 }
-@keyframes typing{
-  0%{
-    width:0;
-    
-  }
-  50%{
-    width:25%
+
+@media screen and (max-width: 768px) {
+  .typing {
+      font-size: 1em; /* Adjust the font size for smaller screens */
   }
 }
 
-
-
+@keyframes typing {
+  0% {
+      width: 0;
+  }
+ 50% {
+      width: 46%; /* Adjust for mobile devices 
+  }
+  
+  100% {
+      width: 25%; /* Adjust for desktop devices */
+  }
+}
