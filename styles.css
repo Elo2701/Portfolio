@@ -178,7 +178,15 @@ a {
     visibility: hidden;
     transition: all 0.3s ease-in-out 0s;
   }
-  
+  @media (max-width: 768px) {
+    .navbar>ul>li>a:before {
+      width: auto;  /* Adjust width based on content */
+      max-width: 30%;  /* Limit width to element */
+      display: block;  /* Show underline as a block */
+      margin: 0 auto;  /* Center underline horizontally */
+      transition: none;  /* Remove animation on mobile */
+    }
+  }
   .navbar a:hover:before,
   .navbar li:hover>a:before,
   .navbar .active:before {
@@ -633,19 +641,17 @@ article .icon {
 }
 @media (max-width: 768px) {
   .navbar ul {
-      display: none;
+    display: none;
   }
 
   .menu-toggle {
-      display: block;
+    display: block;
   }
 
   .navbar.mobile-active ul {
-      display: block;
+    display: block;
   }
-  .navbar ul a {
-    text-decoration: none;
-}
+
 }
 
 /* Add this if you haven't included FontAwesome */
