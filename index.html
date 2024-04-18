@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    
    
 </head>
 <body>
@@ -20,6 +21,11 @@
       <div class="menu-toggle">
         <i class="fa fa-bars"></i>
       </div>
+      <div id="dark-mode-toggle" style="color: white; cursor: pointer;">
+        <i class="fa fa-moon-o fa-2x"></i>
+    </div>
+    
+    
       <nav id="navbar" class="navbar">
           <ul>
               <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
@@ -48,6 +54,7 @@
               </div>
               <br>
               <a href="Elo_CV.pdf" class="del">Download CV</a>
+              
           </div>
       </div>
   </div>
@@ -61,6 +68,7 @@
         menuToggle.addEventListener('click', function() {
             navbar.classList.toggle('mobile-active');
         });
+      
     });
 </script>
 
