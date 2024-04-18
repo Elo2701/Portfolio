@@ -49,8 +49,7 @@
                   <p class="typing"> DevOps Engineer</p>
               </div>
               <br>
-              <a href="Elo_CV.pdf" class="del">Download CV</a>
-              
+             <a href="Elo_CV.pdf" class="del" onclick="trackDownload()">Download CV</a>
           </div>
       </div>
   </div>
@@ -64,6 +63,16 @@
         menuToggle.addEventListener('click', function() {
             navbar.classList.toggle('mobile-active');
         });
+        function trackDownload() {
+            // Check if 'downloadCount' exists in localStorage
+            if (localStorage.getItem('downloadCount')) {
+                // Increment the download count by 1
+                localStorage.setItem('downloadCount', parseInt(localStorage.getItem('downloadCount')) + 1);
+            } else {
+                // Set initial download count to 1
+                localStorage.setItem('downloadCount', 1);
+            }
+        }
       
     });
 </script>
