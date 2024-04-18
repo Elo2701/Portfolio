@@ -530,7 +530,8 @@ a.del{
     display:inline;
     margin:30px 0;
     border-radius:5px;
-}.details-container {
+}
+.details-container {
   padding: 1.5rem;
   background: white;
   border-radius: 2rem;
